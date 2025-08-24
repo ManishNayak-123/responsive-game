@@ -1,0 +1,256 @@
+/* css part */
+body{
+    color:black;
+    padding : 0;
+    margin: 0;
+}
+h2{
+    background-color: transparent;
+    color:#ffde59
+}
+#container{
+    height: 600px;
+    width: 450px;
+    background:linear-gradient(135deg, #ff0080, #7928ca, #2af598);
+    border:3px solid transparent;
+    animation:borderGlow 4s linear infinite;
+    justify-self: center;
+    color:#00eaff;
+    margin-top:20px;
+    border-radius:2rem;
+
+}
+/* for i phone */
+@media (max-width : 500px) and (max-height:1000px){
+    #container{
+    height: 844px;
+    width: 394px;
+    background:linear-gradient(135deg, #ff0080, #7928ca, #2af598);
+    border:3px solid transparent;
+    animation:borderGlow 4s linear infinite;
+    justify-self: center;
+    color:#00eaff;
+    margin-top:20px;
+    border-radius:.5rem;
+
+}
+#boxes{
+    display: flex;
+    justify-content:center;
+    margin-top:20px;
+    gap:2rem;
+    padding:3px;
+
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    
+}
+.img-for-boxes{
+    height: 90px;
+    width: 90px;
+    border-radius: 5rem;
+    object-fit: cover;
+    
+}    
+}
+/* for vivo t1x */
+@media (max-width : 500px) and (max-height:1000px){
+    #container{
+    height: 800px;
+    width: 360px;
+    background:linear-gradient(135deg, #ff0080, #7928ca, #2af598);
+    border:3px solid transparent;
+    animation:borderGlow 4s linear infinite;
+    justify-self: center;
+    color:#00eaff;
+    margin-top:20px;
+    border-radius:.5rem;
+
+}
+#boxes{
+    display: flex;
+    justify-content:center;
+    margin-top:20px;
+    gap:10px;
+    padding:3px;
+
+}
+
+.box1{
+    height: 70px;
+    width: 70px;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    
+}
+.img-for-boxes{
+    height: 60px;
+    width: 60px;
+    border-radius: 5rem;
+    object-fit: cover;
+    
+}    
+}
+/* for samsung */
+@media (max-width : 500px) and (max-height:1000px){
+    #container{
+    height: 850px;
+    width: 414px;
+    background:linear-gradient(135deg, #ff0080, #7928ca, #2af598);
+    border:3px solid transparent;
+    animation:borderGlow 4s linear infinite;
+    justify-self: center;
+    color:#00eaff;
+    margin-top:20px;
+    border-radius:.5rem;
+
+}
+#boxes{
+    display: flex;
+    justify-content:center;
+    margin-top:20px;
+    gap:2rem;
+    padding:3px;
+
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    
+}
+.img-for-boxes{
+    height: 90px;
+    width: 90px;
+    border-radius: 5rem;
+    object-fit: cover;
+    
+}    
+}
+@keyframes borderGlow{
+    0%{
+        border-color:#ff0080;
+        box-shadow:0 0 15px #ff0080;
+    }
+      25%{
+        border-color:#7928ca;
+        box-shadow:0 0 15px #7928ca;
+    }
+      50%{
+        border-color:#2af598;
+        box-shadow:0 0 15px #2af598;
+    }
+      75%{
+        border-color:#00eaff;
+        box-shadow:0 0 15px #00eaff;
+    }
+     100%{
+        border-color:#ff0080;
+        box-shadow:0 0 15px #ff0080;
+        
+    }
+    
+}
+.box1{
+    height: 110px;
+    width: 110px;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    
+}
+@keyframes gradientAnimation{
+    0%{
+        background-position:0% 50%;
+    }
+      50%{
+        background-position:100% 50%;
+    }
+      100%{
+        background-position:0% 50%;
+    }
+    
+}
+.box1:hover{
+    cursor: pointer;
+    background-color:#081b31;
+    background:linear-gradient(270deg, #ff0080, #7928ca, #2af598, #00eaff);
+    background-size:800% 800%;
+    animation:gradientAnimation 12s ease infinite;
+    
+}
+.img-for-boxes{
+    height: 100px;
+    width: 100px;
+    border-radius: 5rem;
+    object-fit: cover;
+    
+}
+#boxes{
+    display: flex;
+    justify-content:center;
+    margin-top:20px;
+    gap:3rem;
+}
+
+#scores-board{
+    color:black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap:3rem;
+
+}
+.score{
+    color:blue;
+    text-shadow:0 0 15px #ff0080, 0 0 30px #ff4fa3;
+    font-size:2.5rem; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.color{
+    background:linear-gradient(270deg, #b5aab0, #7928ca, #2af598, #00eaff);
+    height:fit-content;
+    border-radius:2rem;
+    text-align: center;
+    padding:2px;
+   
+
+}
+#para{
+    background-color: #081b31;
+    font-size:1.6rem;
+    border-radius: 1rem;
+    height:fit-content;
+    text-align: center;
+    width: fit-content;
+    align-items: center;
+    padding:3px;
+}
+#btn{
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border-radius:2rem;
+    font-size: 20px;
+    border:0;
+    color:#ff0080;
+    font-weight: bold;
+    background:linear-gradient(270deg, #24181f, #131314, #0b100e, #021315);
+    border:0 solid transparent;
+}

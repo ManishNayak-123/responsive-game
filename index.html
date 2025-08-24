@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rsp game</title>
+    <link rel = "stylesheet"  href = "rsp.css">
+</head>
+<body>
+    <!-- <center><h2>Rock scessor paper game</h2></center> -->
+
+    <div id = "container">
+        <center><h2>Rock Paper Scissor Game</h2></center>
+        <div id = "boxes">
+        
+        <div class = "box1" id = "rock">
+            <img class ="img-for-boxes" src = "rock2.png" />
+        </div>
+        <div class = "box1" id = "paper">
+            <img  class ="img-for-boxes" src ="paper2.png"/>
+        </div>
+        <div class = "box1" id = "scissor">
+            <img  class ="img-for-boxes" src ="scissor2.png" />
+        </div>
+        </div>
+
+        <div id = "scores-board">
+        <div class = "score">
+          <p class = "color">You</p>
+          <p  class = "color" id = "user-score">0</p>
+        </div>
+        <div class = "score">
+            <p class = "color">Comp</p>
+            <p class = "color" id = "comp-score">0</p>
+        </div>
+        </div>
+    
+        <center><div id ="msg">
+            <p id ="para">play your game</p>
+        </div></center>
+        <center><button id = "btn">Clear</button></center>
+    </div>
+    <script src = "rsp.js"></script>
+</body>
+</html>
